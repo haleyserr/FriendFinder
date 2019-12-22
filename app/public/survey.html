@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="survey" class="container">
+
+        <h2>Friend Finder Survey</h2>
+
+        <h3> About Me </h3>
+
+        <h4>Name</h4>
+
+        <input type="text" id="name" class="form-control" REQUIRED>
+
+        <h4> Link to Photo</h4>
+
+        <!-- Would be nice if there was a "Browse Out" function for Photo, table as enhancement -->
+
+        <input type="text" id="photo" class="form-control" REQUIRED>
+
+        <h2> Survey Questions</h2>
+
+        <h4> Please answer on a scale of 1 to 5, with one representing "Strongly Disagree", and 5 reprenting "Strongly
+            Agree".</h4>
+
+        <!-- I looked at example for how to do the drop downs, essentially your displayed values can be different from the "backend" value like in inquierer.-->
+
+        <h3>Question 1</h3>
+        <h4>What is your approximate age group?</h4>
+
+        <select class="chosen-select" id="question1" style="display: none;">
+            <option value="1">>20</option>
+            <option value="2">20-30</option>
+            <option value="3">30-40</option>
+            <option value="4">40-50</option>
+            <option value="5">50+</option>
+        </select>
+
+
+        <h3>Question 2</h3>
+        <h4>Do you have children?</h4>
+
+        <select class="chosen-select" id="question2" style="display: none;">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+
+        <h3>Question 3</h3>
+        <h4>Do you have pets?</h4>
+
+        <select class="chosen-select" id="question3" style="display: none;">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+
+        <br>
+
+        <h3>Alright- now that we've gotten the basics out of the way, let's answer some serious questions...</h3>
+
+        <br>
+
+
+        <h3>Question 4</h3>
+        <h4>How much toothpaste do you use when brushing your teeth?</h4>
+
+        <select class="chosen-select" id="question4" style="display: none;">
+            <option value="1">Pea Sized Amount</option>
+            <option value="2">An inch's worth, the bristles must be covered</option>
+            <option value="3">I don't brush my teeth</option>
+        </select>
+
+
+        <h3>Question 5</h3>
+        <h4>How do you determine the tip when eating out?</h4>
+
+        <select class="chosen-select" id="question5" style="display: none;">
+            <option value="2">I am always more than generous to my servers, tipping in excess of 20%</option>
+            <option value="2">As long as the service was not deplorable, I will tip at least 15%.</option>
+            <option value="3">I expect excellent service in order to provide a tip above 10%.</option>
+            <option value="4">I do not tip</option>
+        </select>
+
+
+        <h3>Question 6</h3>
+        <h4>Following a grocery haul, what do you do with the cart?</h4>
+
+        <select class="chosen-select" id="question6" style="display: none;">
+            <option value="1">Move cart to the nearest cart holding facility and neatly queue in line.</option>
+            <option value="2">Leave the cart in an open parking spot.</option>
+            <option value="3">Strategically place the cart behind an unsuspecting vehicle.</option>
+        </select>
+
+
+        <h3>Question 7</h3>
+        <h4>How do you put on your shoes?</h4>
+
+        <select class="chosen-select" id="question7" style="display: none;">
+            <option value="1">Sock, Sock. Shoe, Shoe.</option>
+            <option value="2">Sock-Shoe. Sock-Shoe.</option>
+            <option value="3">I don't wear socks</option>
+        </select>
+
+
+        <h3>Question 8</h3>
+        <h4>When preparing a roll at family dinner, in what state do you leave the butter?</h4>
+
+        <select class="chosen-select" id="question8" style="display: none;">
+            <option value="1">The butter is clean and a knife is neatly left for others.</option>
+            <option value="2">I leave the knife, but typically leave crumbs behind.</option>
+            <option value="3">In order to eliminate crumbs, I cut off the outer layer and then *lick* the knife. Yes,
+                this knife is discreetly placed back onto the butter dish.</option>
+            <option value="4">I am neat, but use my own knife. Better safe than sorry.</option>
+        </select>
+
+        <h3>Question 9</h3>
+        <h4>You are in the bathroom and use the last of the TP. What do you do?</h4>
+
+        <select class="chosen-select" id="question9" style="display: none;">
+            <option value="1">Replace the roll and throw out the empty tube.</option>
+            <option value="2">Replace the roll by perching it atop the empty tube.</option>
+            <option value="3">Leave. TP is the next person's problem.</option>
+        </select>
+
+        <h3>Question 10</h3>
+        <h4>How do you eat an Oreo?</h4>
+
+        <select class="chosen-select" id="question10" style="display: none;">
+            <option value="1">Like a sandwhich, just bite directly in center. No special handling.</option>
+            <option value="2">Dunk that 'O in some milk!</option>
+            <option value="3">Open both sides, lick icing first, then eat cookie.</option>
+            <option value="4">Twist to evenly distribute icing, then open both sides and dunk in milk.</option>
+            <option value="5">I do not like Oreos.</option>
+        </select>
+
+        <button type="submit" class="btn btn-sucess btn-large" id="submit">Submit</button>
+
+
+
+
+    </div>
+
+</body>
+
+
+
+</html>
