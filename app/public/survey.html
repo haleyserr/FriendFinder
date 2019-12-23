@@ -210,19 +210,36 @@
                 $.post("/api/friends", friendData,
                     function (data) {
 
-                        console.log(data);
+
+                     // Display Match   
+
+                     //console.log(friendsList[bestMatch].name);
+                     //console.log(friendsList[bestMatch].photo);
 
 
-                        // Compatibility Logic
+
+
 
                     });
 
-            });
+            
 
 
-            //Display Match
 
-            //GET Request
+
+            // GET Request
+            
+
+            $.get("/api/friends", friendData,
+                function (data) {
+
+                });
+
+
+
+           
+
+        });
         </script>
 
 
