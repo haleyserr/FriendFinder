@@ -27,7 +27,7 @@
 
         <h4> Link to Photo</h4>
 
-        <!-- Would be nice if there was a "Browse Out" function for Photo, table as enhancement -->
+        <!-- Enhancement Would be nice if there was a "Browse Out" function for Photo -->
 
         <input type="text" id="photo" class="form-control" REQUIRED>
 
@@ -87,10 +87,10 @@
         <h4>How do you determine the tip when eating out?</h4>
 
         <select class="chosen-select" id="question5" style="display: none;">
-            <option value="2">I am always more than generous to my servers, tipping in excess of 20%</option>
+            <option value="2">I am always more than generous to my servers, tipping in excess of 20%.</option>
             <option value="2">As long as the service was not deplorable, I will tip at least 15%.</option>
             <option value="3">I expect excellent service in order to provide a tip above 10%.</option>
-            <option value="4">I do not tip</option>
+            <option value="4">I do not tip.</option>
         </select>
 
 
@@ -147,7 +147,61 @@
 
         <button type="submit" class="btn btn-sucess btn-large" id="submit">Submit</button>
 
+        <script type="text/javascript">
+            $("#submit").on("click", function (event) {
 
+                event.preventDefault();
+
+                //Enhancement- Validation
+
+
+                //Build Object based on results
+
+                var friendData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("question1").val(),
+                        $("question2").val(),
+                        $("question3").val(),
+                        $("question4").val(),
+                        $("question5").val(),
+                        $("question6").val(),
+                        $("question7").val(),
+                        $("question8").val(),
+                        $("question9").val(),
+                        $("question10").val(),
+                    ]
+
+                };
+
+
+                console.log(friendData);
+
+                // POST Results
+
+                $.post("/api/friends", friendData,
+                    function (data) {
+
+                        console.log(data);
+
+
+                        // Compatibility Logic
+            
+                    });
+
+            });
+
+
+            //Display Match
+
+            //GET Request
+
+        
+
+
+
+        </script>
 
 
     </div>
