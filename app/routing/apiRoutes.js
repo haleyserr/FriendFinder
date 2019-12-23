@@ -15,7 +15,9 @@ module.exports = function(app) {
 
 
    //GET
-
+   app.get("/api/friends", function(req, res) {
+      res.json(friendsList);
+    });
 
 
 
